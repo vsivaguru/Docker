@@ -2,4 +2,9 @@ Commandes:
 
 #docker ps
 #docker ps -a
+
+Lors de l’installation de Docker, trois réseaux sont créés automatiquement:
 #docker network ls
+#docker network inspect bridge
+
+# brctl show
