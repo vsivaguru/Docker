@@ -3,8 +3,29 @@ Commandes:
 #docker ps
 #docker ps -a
 
+Network
+
+Comprendre le réseau sous Docker 1/2 : le Bridge
+
+https://blog.alphorm.com/reseau-docker-partie-1-bridge/
+
 Lors de l’installation de Docker, trois réseaux sont créés automatiquement:
 #docker network ls
 #docker network inspect bridge
 
 # brctl show
+
+Création d’un réseau Bridge Blue:
+# docker network create --driver bridge blue
+# docker network inspect blue
+# docker network ls
+
+Connexion d’un container au réseau blue:
+
+# docker run --network blue -itd --name blue1 alpine
+# docker network inspect blue
+# docker run -itd --name blue2 alpine 
+# docker network inspect blue
+
+# docker run -it --name blue2 --network blue debian /bin/bash
+# docker attach blue2
