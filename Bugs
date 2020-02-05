@@ -1,0 +1,6 @@
+1. root@clasyn-rk15-kub:~# systemctl start docker
+Failed to start docker.service: Unit docker.service is masked.
+
+Résolution: 
+  sudo systemctl unmask docker
+  sudo systemctl start docker
