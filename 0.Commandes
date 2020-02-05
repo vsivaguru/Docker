@@ -1,5 +1,14 @@
 Commandes:
 
+Install docker: 
+  https://docs.docker.com/install/linux/docker-ce/debian/#install-docker-ce
+  apt-get install docker-ce=5:18.09.2~3-0~ubuntu-bionic docker-ce-cli=5:18.09.2~3-0~ubuntu-bionic containerd.io
+  
+  List the versions available in your repo:
+  apt-cache madison docker-ce
+  
+  
+  
 #docker ps
 #docker ps -a
 
