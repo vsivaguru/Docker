@@ -33,7 +33,10 @@ Connexion d’un container au réseau blue:
 
 # docker run --network blue -itd --name blue1 alpine
 # docker network inspect blue
-# docker run -itd --name blue2 alpine 
+
+Install docker alpine:
+  docker run -itd --name blue2 alpine 
+  
 # docker network inspect blue
 
 # docker run -it --name blue2 --network blue debian /bin/bash
