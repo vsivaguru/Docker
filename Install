@@ -1,0 +1,14 @@
+Install:
+  docker run -did --name siva alpine:latest
+
+Connection sur l'image docker:
+  docker exec -ti siva sh
+
+Check:
+  ps
+
+Exposition de port:
+  docker run -tid -p 8080:80 --name web nginx:latest
+ 
+
+  
