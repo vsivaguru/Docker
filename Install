@@ -10,5 +10,23 @@ Check:
 Exposition de port:
   docker run -tid -p 8080:80 --name web nginx:latest
  
+#Dockerfile
+FROM node:8.11
+MAINTAINER siva
+RUN npm install -g npm@latest \
+&& apt-get update \
+&& apt-get install -y telnet \
+
+#build une image depuis le dockerfile avec un nom siva
+docker build -t --name siva .
+
+#lister image qu'on a buildé
+docker images ls
+
+#exec l'image 
+docker exec -ti siva'id docker' sh
+
+
+
 
   
