@@ -17,13 +17,16 @@ RUN npm install -g npm@latest \
 && apt-get update \
 && apt-get install -y telnet \
 
-#build une image depuis le dockerfile avec un nom siva
-docker build -t --name siva .
+Step 1: build une image depuis le dockerfile avec un nom siva
+docker build -t siva:v1.0 .
 
-#lister image qu'on a buildé
+Step 2:lister image qu'on a buildé
 docker images ls
 
-#exec l'image 
+Step 3:run image
+docker run -ti 81f1dff1adc6 sh
+
+Step 4:exec l'image 
 docker exec -ti siva'id docker' sh
 
 
