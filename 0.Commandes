@@ -41,3 +41,5 @@ Install docker alpine:
 
 # docker run -it --name blue2 --network blue debian /bin/bash
 # docker attach blue2
+#docker version
+docker version --format '{{.Server.Version}}'
