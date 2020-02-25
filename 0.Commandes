@@ -6,8 +6,9 @@ Install docker:
   
   List the versions available in your repo:
   apt-cache madison docker-ce
-  
-  
+
+#docker image remove  
+docker image rm 75835a67d134 2a4cca5ac898
   
 #docker ps
 #docker ps -a
