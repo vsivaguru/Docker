@@ -44,3 +44,15 @@ Install docker alpine:
 # docker attach blue2
 #docker version
 docker version --format '{{.Server.Version}}'
+
+
+#Remove dockers
+docker stop $(docker ps -a -q)
+docker rm $(docker ps -a -q)
+
+docker images
+docker image rm "id docker" 
+
+docker rmi $(docker images -a -q)
+
+
